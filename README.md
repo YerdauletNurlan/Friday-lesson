@@ -40,25 +40,25 @@
 
 ### HOST2 ###
 #### Installing docker ####
-`sudo apt update'
+`sudo apt update`
 
-'sudo apt install apt-transport-https ca-certificates curl software-properties-common'
+`sudo apt install apt-transport-https ca-certificates curl software-properties-common`
 
-'curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -'
+`curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -`
 
-'sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"'
+`sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"`
 
-'sudo apt update'
+`sudo apt update`
 
-'sudo apt install docker-ce`
+`sudo apt install docker-ce`
 ##### check docker service status #####
 `sudo systemctl status docker`
 ##### add docker to user to don't write sudo constantly #####
-`sudo usermod -aG docker ${USER}
+`sudo usermod -aG docker ${USER}`
 
-su - ${USER}
+`su - ${USER}`
 
-id -nG`
+`id -nG`
 ##### run docker container #####
 `docker run -it --rm -d -p 8080:80 --name web nginx`
 ##### check container #####
