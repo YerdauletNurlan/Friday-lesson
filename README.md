@@ -23,9 +23,9 @@
 
 ### HOST1 ###
 #### Installing haproxy ####
-`sudo add-apt-repository ppa:vbernat/haproxy-1.8
-sudo apt-get update
-sudo apt-get install haproxy`
+`sudo add-apt-repository ppa:vbernat/haproxy-1.8`
+`sudo apt-get update`
+`sudo apt-get install haproxy`
 ##### open haproxy config file #####
 `nano /etc/haproxy/haproxy.cfg`
 ##### if you write config file correctly haproxy will work #####
