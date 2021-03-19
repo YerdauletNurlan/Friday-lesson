@@ -26,7 +26,9 @@
 ### HOST1 ###
 #### Installing haproxy ####
 `sudo add-apt-repository ppa:vbernat/haproxy-1.8`
+
 `sudo apt-get update`
+
 `sudo apt-get install haproxy`
 ##### open haproxy config file #####
 `nano /etc/haproxy/haproxy.cfg`
@@ -39,16 +41,23 @@
 ### HOST2 ###
 #### Installing docker ####
 `sudo apt update
+
 sudo apt install apt-transport-https ca-certificates curl software-properties-common
+
 curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+
 sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
 sudo apt update
+
 sudo apt install docker-ce`
 ##### check docker service status #####
 `sudo systemctl status docker`
 ##### add docker to user to don't write sudo constantly #####
 `sudo usermod -aG docker ${USER}
+
 su - ${USER}
+
 id -nG`
 ##### run docker container #####
 `docker run -it --rm -d -p 8080:80 --name web nginx`
