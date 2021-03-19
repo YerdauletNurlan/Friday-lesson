@@ -9,6 +9,7 @@
 #### creating hosts with vagrant ####
 ##### create directory where vagrant will be #####
 `mkdir vagrant`
+
 `cd vagrant` 
 ##### add vagrantfile #####
 `vagrant init`
