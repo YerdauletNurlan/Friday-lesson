@@ -62,11 +62,13 @@
 `id -nG`
 ##### run docker container #####
 `docker run -it --rm -d -p 8080:80 --name web nginx`
+`docker run -it --rm -d -p 8081:80 --name web2 nginx`
 ##### check container #####
 `docker ps`
 ##### add html file into container web #####
 `docker cp index.html web:/usr/share/nginx/html`
 
+`docker cp index2.html web2:/usr/share/nginx/html`
 
 
 
