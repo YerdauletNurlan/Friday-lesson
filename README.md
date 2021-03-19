@@ -6,7 +6,7 @@ sudo apt install ./vagrant_2.2.6_x86_64.deb
 
 #### creating hosts with vagrant ####
 ##### create directory where vagrant will be #####
-' mkdir vagrant '
+'mkdir vagrant'
 cd vagrant 
 ##### add vagrantfile #####
 vagrant init  
