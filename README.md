@@ -32,7 +32,7 @@
 
 `sudo apt-get install haproxy`
 ##### open haproxy config file #####
-`nano /etc/haproxy/haproxy.cfg`
+`sudo nano /etc/haproxy/haproxy.cfg`
 ##### if you write config file correctly haproxy will work #####
 `sudo systemctl status haproxy`  
 ##### restart haproxy after updating config file #####
