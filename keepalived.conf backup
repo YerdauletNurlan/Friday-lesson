@@ -1,0 +1,15 @@
+vrrp_instance inst2 { 
+   interface eth0
+   state BACKUP
+   priority 200
+   virtual_router_id 102
+  
+   authentication {
+       auth_type PASS
+       auth_pass 1234
+   }
+
+   virtual_ipaddress {
+      192.167.100.200
+   } 
+}
