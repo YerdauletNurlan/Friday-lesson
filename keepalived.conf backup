@@ -1,15 +1,32 @@
+vrrp_script check_haproxy {
+  #script "killall -0 haproxy"
+  script "/bin/pidof haproxy"
+  interval 2 # every 2 seconds
+  #weight 2 # add 2 points if OK
+}
+
 vrrp_instance inst2 { 
-   interface eth0
+   interface eth1
    state BACKUP
    priority 200
    virtual_router_id 102
-  
+   unicast_src_ip 192.167.100.13 #backup ip
+
+    unicast_peer {
+        192.167.100.11 #master ip
+    }
+
    authentication {
        auth_type PASS
        auth_pass 1234
    }
 
    virtual_ipaddress {
-      192.167.100.200
+       192.167.100.200
    } 
+       
+   track_script {
+       check_haproxy
+   }
+
 }
