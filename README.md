@@ -31,12 +31,17 @@
 `sudo apt-get update`
 
 `sudo apt-get install haproxy`
-##### open haproxy config file #####
+##### modify haproxy config file #####
 `sudo nano /etc/haproxy/haproxy.cfg`
 ##### if you write config file correctly haproxy will work #####
 `sudo systemctl status haproxy`  
 ##### restart haproxy after updating config file #####
 `sudo systemctl restart haproxy`
+##### install keepalived #####
+`sudo apt install keepalived`
+##### modify keepalived config file #####
+`sudo nano /etc/keepalived/keepalived.conf`
+
 
 
 ### HOST2 ###
@@ -72,7 +77,23 @@
 `docker cp index2.html web2:/usr/share/nginx/html/index.html`
 
 
+### HOST3 ###
+#### Installing haproxy ####
+`sudo add-apt-repository ppa:vbernat/haproxy-1.8`
 
+`sudo apt-get update`
+
+`sudo apt-get install haproxy`
+##### modify haproxy config file #####
+`sudo nano /etc/haproxy/haproxy.cfg`
+##### if you write config file correctly haproxy will work #####
+`sudo systemctl status haproxy`  
+##### restart haproxy after updating config file #####
+`sudo systemctl restart haproxy`
+##### install keepalived #####
+`sudo apt install keepalived`
+##### modify keepalived config file #####
+`sudo nano /etc/keepalived/keepalived.conf`
 
 
 https://github.com/YerdauletNurlan/Friday-lesson
