@@ -1,8 +1,6 @@
 vrrp_script check_haproxy {
-  #script "killall -0 haproxy"
   script "/bin/pidof haproxy"
   interval 2 # every 2 seconds
-  #weight 2 # add 2 points if OK
 }
 
 vrrp_instance inst1 {
