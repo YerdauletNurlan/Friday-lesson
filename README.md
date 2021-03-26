@@ -60,7 +60,7 @@
 
 `sudo apt-get update`
 
-`sudo apt install docker-ce`
+`sudo apt-get install docker-ce`
 ##### check docker service status #####
 `sudo systemctl status docker`
 ##### add docker to user to don't write sudo constantly #####
