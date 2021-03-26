@@ -12,6 +12,13 @@ servers=[
     :box => "generic/ubuntu1604",
     :ram => 1024,
     :cpu => 1
+  },
+  {
+    :hostname => "host3",
+    :ip1 => "192.167.100.13",
+    :box => "generic/ubuntu1604",
+    :ram => 1024,
+    :cpu => 1
   }
 ]
 
@@ -31,4 +38,3 @@ Vagrant.configure(2) do |config|
     end
   end
 end
-
