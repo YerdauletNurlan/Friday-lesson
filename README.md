@@ -30,7 +30,7 @@
 
 `sudo apt-get update`
 
-`sudo apt install haproxy`
+`sudo apt-get install haproxy`
 ##### modify haproxy config file #####
 `sudo nano /etc/haproxy/haproxy.cfg`
 ##### if you write config file correctly haproxy will work #####
@@ -83,7 +83,7 @@
 
 `sudo apt-get update`
 
-`sudo apt-get install haproxy`
+`sudo apt install haproxy`
 ##### modify haproxy config file #####
 `sudo nano /etc/haproxy/haproxy.cfg`
 ##### if you write config file correctly haproxy will work #####
@@ -91,7 +91,7 @@
 ##### restart haproxy after updating config file #####
 `sudo systemctl restart haproxy`
 ##### install keepalived #####
-`sudo apt install keepalived`
+`sudo apt-get install keepalived`
 ##### modify keepalived config file #####
 `sudo nano /etc/keepalived/keepalived.conf`
 
