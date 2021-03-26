@@ -11,7 +11,7 @@ vrrp_instance inst1 {
    unicast_src_ip 192.167.100.11 #master ip
 
     unicast_peer {
-        192.167.100.13 backup ip
+        192.167.100.13 #backup ip
     }
 
    authentication {
