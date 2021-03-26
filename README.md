@@ -24,7 +24,7 @@
 
 
 
-### HOST1 ###
+### MASTER ###
 #### Installing haproxy ####
 `sudo add-apt-repository ppa:vbernat/haproxy-1.8`
 
@@ -57,7 +57,7 @@
 `sudo systemctl status haproxy`  
 
 
-### HOST2 ###
+### CONTAINERS ###
 #### Installing docker ####
 `sudo apt-get update`
 
@@ -90,9 +90,7 @@
 `docker cp index2.html web2:/usr/share/nginx/html/index.html`
 
 
-### HOST3 ###
-
-### HOST1 ###
+### BACKUP ###
 #### Installing haproxy ####
 `sudo add-apt-repository ppa:vbernat/haproxy-1.8`
 
