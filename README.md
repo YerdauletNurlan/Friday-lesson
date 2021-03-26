@@ -33,10 +33,6 @@
 `sudo apt-get install haproxy`
 ##### modify haproxy config file #####
 `sudo nano /etc/haproxy/haproxy.cfg`
-##### if you write config file correctly haproxy will work #####
-`sudo systemctl status haproxy`  
-##### restart haproxy after updating config file #####
-`sudo systemctl restart haproxy`
 ##### install keepalived #####
 `sudo apt install keepalived`
 ##### enable ip forwarding #####
@@ -51,7 +47,10 @@
 `sudo systemctl start keepalived`
 ##### check keepalived status #####
 `sudo systemctl status keepalived`
-
+##### restart haproxy after updating config file #####
+`sudo systemctl restart haproxy`
+##### check haproxy status #####
+`sudo systemctl status haproxy`  
 
 
 ### HOST2 ###
@@ -88,6 +87,8 @@
 
 
 ### HOST3 ###
+
+### HOST1 ###
 #### Installing haproxy ####
 `sudo add-apt-repository ppa:vbernat/haproxy-1.8`
 
@@ -96,10 +97,6 @@
 `sudo apt-get install haproxy`
 ##### modify haproxy config file #####
 `sudo nano /etc/haproxy/haproxy.cfg`
-##### if you write config file correctly haproxy will work #####
-`sudo systemctl status haproxy`  
-##### restart haproxy after updating config file #####
-`sudo systemctl restart haproxy`
 ##### install keepalived #####
 `sudo apt install keepalived`
 ##### enable ip forwarding #####
@@ -114,6 +111,10 @@
 `sudo systemctl start keepalived`
 ##### check keepalived status #####
 `sudo systemctl status keepalived`
+##### restart haproxy after updating config file #####
+`sudo systemctl restart haproxy`
+##### check haproxy status #####
+`sudo systemctl status haproxy`  
 
 
 https://github.com/YerdauletNurlan/Friday-lesson
