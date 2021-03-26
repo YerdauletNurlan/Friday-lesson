@@ -1,20 +1,20 @@
 servers=[
   {
-    :hostname => "host1",
+    :hostname => "master",
     :ip1 => "192.167.100.11",
     :box => "generic/ubuntu1604",
     :ram => 1024,
     :cpu => 1
   },
   {
-    :hostname => "host2",
+    :hostname => "container",
     :ip1 => "192.167.100.12",
     :box => "generic/ubuntu1604",
     :ram => 1024,
     :cpu => 1
   },
   {
-    :hostname => "host3",
+    :hostname => "backup",
     :ip1 => "192.167.100.13",
     :box => "generic/ubuntu1604",
     :ram => 1024,
