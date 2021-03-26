@@ -39,6 +39,12 @@
 `sudo systemctl restart haproxy`
 ##### install keepalived #####
 `sudo apt install keepalived`
+##### enable ip forwarding #####
+`sed -i 's/#net.ipv4.ip_forward=1/net.ipv4.ip_forward=1/' /etc/sysctl.conf`
+
+`echo "net.ipv4.ip_nonlocal_bind = 1" >> /etc/sysctl.conf`
+
+`sysctl -p`
 ##### modify keepalived config file #####
 `sudo nano /etc/keepalived/keepalived.conf`
 ##### run keepalived #####
