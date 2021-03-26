@@ -41,6 +41,10 @@
 `sudo apt install keepalived`
 ##### modify keepalived config file #####
 `sudo nano /etc/keepalived/keepalived.conf`
+##### run keepalived #####
+`sudo systemctl start keepalived`
+##### check keepalived status #####
+`sudo systemctl status keepalived`
 
 
 
@@ -83,7 +87,7 @@
 
 `sudo apt-get update`
 
-`sudo apt install haproxy`
+`sudo apt-get install haproxy`
 ##### modify haproxy config file #####
 `sudo nano /etc/haproxy/haproxy.cfg`
 ##### if you write config file correctly haproxy will work #####
@@ -91,9 +95,13 @@
 ##### restart haproxy after updating config file #####
 `sudo systemctl restart haproxy`
 ##### install keepalived #####
-`sudo apt-get install keepalived`
+`sudo apt install keepalived`
 ##### modify keepalived config file #####
 `sudo nano /etc/keepalived/keepalived.conf`
+##### run keepalived #####
+`sudo systemctl start keepalived`
+##### check keepalived status #####
+`sudo systemctl status keepalived`
 
 
 https://github.com/YerdauletNurlan/Friday-lesson
